@@ -1,4 +1,4 @@
-# Lab Work №3: Hooks and Lists Rendering.
+# Lab №3: Hooks and Lists Rendering.
 
 ## Installation and Project Launch Instructions
 
