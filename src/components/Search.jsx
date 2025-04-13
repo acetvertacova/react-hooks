@@ -1,9 +1,7 @@
 import { useState } from "react";
 
 export default function Search({ onSearch }) {
-
     const [search, setSearch] = useState("");
-
     const handleSearchChange = (e) => {
         setSearch(e.target.value);
         onSearch(e.target.value);

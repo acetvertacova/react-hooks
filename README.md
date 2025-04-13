@@ -25,8 +25,8 @@ This project provides hands-on experience with React hooks and dynamic rendering
       │── components/
       │   │── Footer.jsx
       │   │── Header.jsx
-      │   │── MenuItemCard.jsx
-      │   │── MenuItemList.jsx
+      │   │── MenuCard.jsx
+      │   │── Menu.jsx
       │   │── Search.jsx
       │   │── Slider.jsx
       │── data/
@@ -114,9 +114,9 @@ The `Search` component allows users to input a search query to filter items. It 
 <img src="/public/search-in-work.png">
 
 
-### `MenuItemList`
+### `Menu`
 
-The `MenuItemList` component displays a list of menu items with a search feature. It filters the list of menu items based on the search query provided by the user.
+The `Menu` component displays a list of menu items with a search feature. It filters the list of menu items based on the search query provided by the user.
 
 ```jsx
 
@@ -142,20 +142,20 @@ The `MenuItemList` component displays a list of menu items with a search feature
     <div>
         <Search onSearch={handleSearch} />
         {filteredMenuItems.map((menuItem) => (
-            <MenuItemCard key={menuItem.id} menuItem={menuItem} />
+            <MenuCard key={menuItem.id} menuItem={menuItem} />
         ))}
 
     </div>
     )
 ```
 
-### `MenuItemCard`
+### `MenuCard`
 
-The `MenuItemCard` component displays an individual menu item with options for selecting a size and adding it to the cart. It shows the item’s image, name, description, price, and available sizes.
+The `MenuCard` component displays an individual menu item with options for selecting a size and adding it to the cart. It shows the item’s image, name, description, price, and available sizes.
 
 ```jsx
 // Accepts a menuItem object containing item details like name, image, description, price, and sizes
-    export default function MenuItemCard({ menuItem }) {
+    export default function MenuCard({ menuItem }) {
 
 // useState to track the selected size, defaulting to the first size in the array
     const [selectedSize, setSize] = useState(menuItem.sizes[0]); 

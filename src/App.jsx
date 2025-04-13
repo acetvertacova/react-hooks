@@ -1,8 +1,7 @@
-import './App.css'
 import Footer from './components/Footer'
 import Header from './components/Header'
 import Slider from './components/Slider'
-import MenuItemList from './components/MenuItemList'
+import Menu from './components/Menu'
 
 function App() {
 
@@ -10,7 +9,7 @@ function App() {
     <>
       <Header />
       <Slider />
-      <MenuItemList />
+      <Menu />
       <Footer />
     </>
   )

@@ -1,5 +1,5 @@
 export default function Footer() {
-    return(
+    return (
         <footer className="w-full bg-[#493D9E] text-center py-4 shadow-lg">
             <div className="text-[#C4D9FF] font-medium">
                 ©{" "}
